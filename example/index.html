@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+    
+    	<ul>
+    		<li data-weight="1.65"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="1.6"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="1.5"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="1.5"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="1.4"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="1.2"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="1"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="0.9"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="0.85"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="0.85"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="0.8"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="0.7"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="0.65"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="0.6"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="0.5"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="0.5"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="0.4"><img src="http://placehold.it/150x150"></li>
+    		<li data-weight="0.35"><img src="http://placehold.it/150x150"></li>
+    	</ul>
+    
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    	<script type="text/javascript" src="../jquery.disperse.js"></script>
+    	<script type="text/javascript">
+    		$(document).ready(function() {
+    			$('ul li').disperse({
+    				base: 4,
+    				factor: 5,
+    				type: 'exponential'
+    			});
+    		});
+    	</script>
+    </body>
+</html>
